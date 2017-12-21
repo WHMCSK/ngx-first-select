@@ -1,0 +1,22 @@
+<header-component tagline="首页"></header-component>
+
+<section class="main-content">
+
+    <h3><a id="demo" class="anchor" href="#demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo</h3>
+
+    <div style="width:300px">
+        <!-- <ng2-first-tree [data]='treedata' [settings]='settings' (allFolded)="onFolded($event)" (allExpansion)="onExpansion($event)" 
+        (searchEvent)="onsearch($event)"
+        ></ng2-first-tree> -->
+        <ngx-first-select [data]="data" [defaultSelect]="defaultSelect" (selected)="onSelected($event)" ></ngx-first-select> 假装后面有东西
+    </div>
+
+    <h3><a id="support" class="anchor" href="#support" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>我怎么能支持你们？</h3>
+
+    <p>如果你有时间：</p>
+    <ul>
+        <li>可以关注我们的： <a href="https://github.com/wang-cola/ng2-first-tree" target="_blank">GitHub</a></li>
+        <li>创建拉请求，提交错误，建议新功能</li>
+        <li (click)="ondel()">删除</li>
+    </ul>
+</section>

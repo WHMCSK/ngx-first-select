@@ -1,0 +1,53 @@
+<header-component tagline="文档"></header-component>
+<div style="width:500px">
+    <!-- <ng2-first-tree [data]='treedata' [settings]='settings' (nodeClick)="nodeClick($event)" (nodeMenuClick)="nodeMenuClick($event)"></ng2-first-tree> -->
+    
+</div>
+
+<section class="main-content">
+    <h3><a id="inputs" class="anchor" href="#configuration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>组件输入</h3>
+
+    <table>
+        <tr>
+            <th>输入</th>
+            <th>Type</th>
+            <th>描述</th>
+        </tr>
+        <tr>
+            <td>[treeSettings]</td>
+            <td><span class="highlight">Object</span></td>
+            <td>下拉框内的数的配置对象，详细配置可见ng2-first-tree的配置文档</td>
+        </tr>
+        <tr>
+            <td>[data]</td>
+            <td><span class="highlight">Array</span></td>
+            <td>树数据，数组</td>
+        </tr>
+        <tr>
+            <td>[defaultSelect]</td>
+            <td><span class="highlight">string</span></td>
+            <td>默认选中的数据</td>
+        </tr>
+        <tr>
+            <td>[width]</td>
+            <td><span class="highlight">string</span></td>
+            <td>组件宽度，格式如：[width]="300px"，默认为200px</td>
+        </tr>
+    </table>
+    
+    <h3><a id="inputs" class="anchor" href="#configuration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>组件输出事件</h3>
+    
+        <table>
+            <tr>
+                <th>事件名</th>
+                <th>Type</th>
+                <th>描述</th>
+            </tr>
+            <tr>
+                <td>selected</td>
+                <td><span class="highlight">function</span></td>
+                <td>组件选择事件，选择了某条数据时，会关闭下拉框，并返回被选择的数据，返回值：当前点击的节点数据</td>
+            </tr>
+           
+        </table>
+</section>

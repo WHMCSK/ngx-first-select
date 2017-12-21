@@ -1,0 +1,39 @@
+
+html,body{
+    font-size: 13px;
+}
+:host /deep/ .select-container{
+    position: relative;
+    
+   .select-box{
+       height: 30px;
+       width: 100%;
+       border: 1px solid #cccccc;
+       line-height: 30px;
+       padding-left: 10px;
+       overflow: hidden;
+       .click-icon{
+        display: inline-block;
+        position: relative;
+        width: 0;
+        height: 0;
+        top: 10px;
+        right: 10px;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 8px solid #cccccc;
+        // border-right: 5px solid transparent;
+        float: right;
+       }
+   }
+   .tree-box{
+        position: absolute;
+        top: 30px;
+        z-index: 999;
+        background-color: #ffffff;
+        border: 1px solid #cccccc;
+        border-top: none;
+   }
+}
+
+
