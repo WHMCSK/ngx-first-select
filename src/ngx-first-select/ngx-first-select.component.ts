@@ -27,7 +27,7 @@ export class NgxFirstSelectComponent {
     //   lv1: true,            // 第一级是否开启选中背景色 
     // },
   };
-  @Input() defaultSelect; // 默认选中的值
+  @Input() currentValue; // 当前选中的值
   @Output() selected = new EventEmitter<any>();
 
   constructor(){
@@ -37,7 +37,7 @@ export class NgxFirstSelectComponent {
     this.treeShow = !this.treeShow;
   }
   nodeClick(e){
-    this.selectedValue = e.text;
+    this.currentValue = e.text;
     this.selected.emit(e);
     this.treeShow = false;
   }

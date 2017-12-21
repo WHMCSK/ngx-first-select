@@ -1,6 +1,6 @@
 <div class="select-container" >
    <div class="select-box" (click)="onClick()" [style.width]="width">
-        <span>{{selectedValue || defaultSelect}}</span>
+        <span>{{currentValue}}</span>
         <span class="click-icon"></span>
    </div>
    <div class="tree-box" *ngIf="treeShow" [style.width]="width">

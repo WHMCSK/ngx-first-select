@@ -4,8 +4,8 @@ html,body{
 }
 :host /deep/ .select-container{
     position: relative;
-    
    .select-box{
+        border-radius: 5px;
        height: 30px;
        width: 100%;
        border: 1px solid #cccccc;
@@ -17,11 +17,11 @@ html,body{
         position: relative;
         width: 0;
         height: 0;
-        top: 10px;
+        top: 11px;
         right: 10px;
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        border-top: 8px solid #cccccc;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid #cccccc;
         // border-right: 5px solid transparent;
         float: right;
        }
