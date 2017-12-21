@@ -7,18 +7,18 @@
 该库可用作npm软件包，因此您只需运行以下命令即可：（如果不是新手，建议先装淘宝镜像端，因为cnpm更快）
 
 ```
-npm install --save ng2-first-tree
+npm install --save ngx-first-select
 ```
 
 该命令将在您的`package.json`文件中创建一个记录，并将该包安装到npm modules文件夹中。
 
 ## 最简单的设置示例
 
-首先需要将ng2-first-tree指令导入到组件中。
+首先需要将ngx-first-select指令导入到组件中。
 
 ```
 
-import { Ng2FirstTreeModule } from 'ng2-first-tree';
+import { NgxFirstSelectModule } from 'ngx-first-select';
 
 ```
 
@@ -31,7 +31,7 @@ import { Ng2FirstTreeModule } from 'ng2-first-tree';
   imports: [
     // ...
     
-    Ng2FirstTreeModule,
+    NgxFirstSelectModule,
     
     // ...
   ],
