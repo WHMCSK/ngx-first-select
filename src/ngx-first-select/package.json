@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "ngx-first-select",
   "version": "1.0.0",
   "description": "this is a angular2 ngx-first-select ui",
@@ -33,3 +34,39 @@
     "@angular/forms": "^4.0.0"
   }
 }
+=======
+    "name": "ngx-first-select",
+    "version": "1.0.1",
+    "description": "this is a angular2 ngx-first-select ui",
+    "main": "./bundles/table.umd.js",
+    "module": "./index.js",
+    "typings": "./index.d.ts",
+    "author": "金飞,王博,张凌燕",
+    "license": "MIT",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ascode/ngx-first-select.git"
+    },
+    "bugs": {
+        "url": "https://github.com/ascode/ngx-first-select/issues"
+    },
+    "homepage": "https://github.com/ascode/ngx-first-select#readme",
+    "keywords": [
+        "angular",
+        "typescript",
+        "table",
+        "tree"
+    ],
+    "dependencies": {
+        "lodash": "^4.17.4",
+        "ng2-completer": "^1.2.2",
+        "ng2-first-tree": "^2.0.3"
+    },
+    "peerDependencies": {
+        "@angular/common": "^4.0.0",
+        "@angular/core": "^4.0.0",
+        "@angular/forms": "^4.0.0"
+    }
+}
+>>>>>>> a022e64854d2ee7474feafcb8d88a7c51cc5e9d8
