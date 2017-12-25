@@ -1,4 +1,4 @@
-import { Component, Input, Output, SimpleChange, EventEmitter, OnChanges, ElementRef, ViewChild } from '@angular/core';
+import { Component, Input, Output, SimpleChange, EventEmitter, OnChanges, ElementRef, ViewChild, HostListener } from '@angular/core';
 import { AfterViewInit } from '@angular/core';
 
 import { deepExtend } from './lib/helpers';
@@ -30,15 +30,36 @@ export class NgxFirstSelectComponent {
   @Input() currentValue; // 当前选中的值
   @Output() selected = new EventEmitter<any>();
 
-  constructor(){
+  constructor(private el:ElementRef) {
+    // 点击body关闭下拉框
+    document.body.onclick = (event) => {
+      if (this.treeShow === true) {
+        this.treeShow = false;
+        event.stopPropagation();
+      }
+      console.log(1232);
 
+    };
+   
+    
   }
-  onClick(){
+
+  ngOnInit(){
+    this.currentValue = 'aaaaaa'
+    console.log(this.currentValue);
+    
+  }
+  onClick() {
     this.treeShow = !this.treeShow;
   }
-  nodeClick(e){
+  nodeClick(e) {
     this.currentValue = e.text;
     this.selected.emit(e);
     this.treeShow = false;
+  }
+  
+  ngAfterViewInit() { // 模板中的元素已创建完成
+    let body = this.el.nativeElement.querySelector(".select-container");
+    console.log(body.parentNode);
   }
 }
